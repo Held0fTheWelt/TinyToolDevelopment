@@ -1,5 +1,7 @@
 # Smart Content Diet
 
+> Not a verbatim copy of shipped docs. This page is an online overview and routing surface; install and day-to-day buyer docs stay in the shipped plugin package.
+
 Smart Content Diet is an Unreal Editor workflow tool for reviewing asset optimization candidates, explaining findings, and supporting guarded QuickFix/reduction workflows.
 
 The product is not listed on Fab yet. This page exists to document the current direction and to make the relationship to the wider TinyToolDevelopment tool stack visible before publication.
@@ -39,9 +41,9 @@ The Freebie Bridges below are not the default integration path. They remain avai
 ## Status
 
 - Category: Editor Tools
-- Status: In preparation
+- Status: Advanced Preview
 - Fab: Not listed yet
-- Documentation: Initial showcase overview available
+- Documentation: Online overview and routing page available; package buyer docs ship with the plugin
 
 ## Support
 
