@@ -1,0 +1,31 @@
+name: LLM Store Policy
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "Config/LLMStore.json"
+      - "Plugins/LLMStore/**"
+
+jobs:
+  llm-store-policy:
+    runs-on: windows-latest
+
+    env:
+      UE_EDITOR_CMD: "D:\\Engines\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe"
+      UPROJECT: "D:\\a\\Project\\Project\\PluginProject.uproject"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check LLM Store shipping policy
+        shell: pwsh
+        run: |
+          & "$env:UE_EDITOR_CMD" "$env:UPROJECT" -run=LLMStoreCIPolicy -Config=Shipping -Unattended -NoSplash -NoSound
+
+      - name: Run LLM Store automation tests
+        shell: pwsh
+        run: |
+          & "$env:UE_EDITOR_CMD" "$env:UPROJECT" -NullRHI -Unattended -NoSplash -NoSound -ExecCmds="Automation RunTests LLMStore; Quit" -TestExit="Automation Test Queue Empty"
+

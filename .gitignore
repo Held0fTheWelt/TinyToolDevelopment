@@ -1,0 +1,62 @@
+# Local/editor state
+.idea/
+.vscode/
+*.tmp
+*.bak
+*.swp
+*.log
+
+# Environment and private local configuration
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+secrets/
+private/
+
+# Python/cache output
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Node/frontend dependencies and builds
+node_modules/
+dist/
+build/
+.next/
+.vite/
+coverage/
+tsconfig.tsbuildinfo
+
+# Unreal/generated project output
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+
+# Local generated/runtime data
+data/
+logs/
+exports/
+reports/
+state/
+tmp/
+Temp/
+*.sqlite
+*.sqlite3
+*.db
+
+# OS files
+Thumbs.db
+.DS_Store
+

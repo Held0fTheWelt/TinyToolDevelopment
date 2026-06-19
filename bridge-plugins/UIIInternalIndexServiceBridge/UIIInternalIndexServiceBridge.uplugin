@@ -1,0 +1,45 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "UII Internal Index Service Bridge",
+	"Description": "Optional bridge for importing Unreal Integration Intelligence handoff contracts into Internal Index Service without coupling either core plugin.",
+	"Category": "AI Plugin Bridges",
+	"CreatedBy": "Tiny Tool Development",
+	"CreatedByURL": "https://www.linkedin.com/company/tiny-tool-development",
+	"DocsURL": "https://github.com/Held0fTheWelt/TinyToolDevelopment/tree/master/bridge-plugins/UIIInternalIndexServiceBridge",
+	"SupportURL": "https://www.linkedin.com/company/tiny-tool-development",
+	"EngineVersion": "5.4.0",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UIIInternalIndexServiceBridge",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"Mac"
+			]
+		},
+		{
+			"Name": "UIIInternalIndexServiceBridgeEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64",
+				"Linux",
+				"Mac"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "InternalIndexService",
+			"Enabled": true
+		}
+	],
+	"IsExperimentalVersion": false
+}

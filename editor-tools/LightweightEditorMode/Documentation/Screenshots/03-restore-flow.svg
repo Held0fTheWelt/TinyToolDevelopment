@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520" role="img" aria-labelledby="title desc">
+  <title id="title">Restore flow</title>
+  <desc id="desc">Diagram explaining same-session restore and conservative restart fallback.</desc>
+  <rect width="1120" height="520" fill="#f7f8fa"/>
+  <text x="56" y="58" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172033">Restore Flow</text>
+  <text x="56" y="91" font-family="Arial, sans-serif" font-size="15" fill="#526070">Disable uses rich session backups when available and a conservative fallback after restart.</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="82" y="142" width="260" height="270" rx="8" fill="#ffffff" stroke="#c7ced8"/>
+    <text x="112" y="178" font-size="19" font-weight="700" fill="#172033">Enable</text>
+    <text x="112" y="216" font-size="14" fill="#526070">Back up scalability</text>
+    <text x="112" y="244" font-size="14" fill="#526070">Back up CVars + SetBy</text>
+    <text x="112" y="272" font-size="14" fill="#526070">Back up view modes</text>
+    <text x="112" y="300" font-size="14" fill="#526070">Back up realtime states</text>
+    <text x="112" y="328" font-size="14" fill="#526070">Store fallback view mode</text>
+
+    <rect x="430" y="112" width="270" height="150" rx="8" fill="#eaf6ef" stroke="#9ac5aa"/>
+    <text x="460" y="148" font-size="19" font-weight="700" fill="#173d28">Same Session</text>
+    <text x="460" y="186" font-size="14" fill="#315c43">Disable restores exact backups:</text>
+    <text x="460" y="214" font-size="14" fill="#315c43">scalability, CVars, viewports</text>
+
+    <rect x="430" y="306" width="270" height="150" rx="8" fill="#fff2df" stroke="#ddb16c"/>
+    <text x="460" y="342" font-size="19" font-weight="700" fill="#5e3d13">After Restart</text>
+    <text x="460" y="380" font-size="14" fill="#6b4d24">Session backups are gone.</text>
+    <text x="460" y="408" font-size="14" fill="#6b4d24">Only Unlit viewports use fallback.</text>
+
+    <rect x="790" y="142" width="250" height="270" rx="8" fill="#ffffff" stroke="#c7ced8"/>
+    <text x="820" y="178" font-size="19" font-weight="700" fill="#172033">Result</text>
+    <text x="820" y="216" font-size="14" fill="#526070">Normal editor state when</text>
+    <text x="820" y="240" font-size="14" fill="#526070">same-session backups exist</text>
+    <line x1="820" y1="266" x2="1010" y2="266" stroke="#d7dce4"/>
+    <text x="820" y="300" font-size="14" fill="#526070">Conservative viewport fix</text>
+    <text x="820" y="324" font-size="14" fill="#526070">when only fallback exists</text>
+
+    <path d="M342 236 C386 190 386 190 430 187" fill="none" stroke="#627084" stroke-width="3"/>
+    <path d="M342 318 C386 380 386 380 430 381" fill="none" stroke="#627084" stroke-width="3"/>
+    <path d="M700 187 C742 204 748 220 790 236" fill="none" stroke="#627084" stroke-width="3"/>
+    <path d="M700 381 C742 360 748 338 790 318" fill="none" stroke="#627084" stroke-width="3"/>
+  </g>
+</svg>
+

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#202124"/>
+  <rect x="70" y="58" width="1140" height="604" rx="8" fill="#101214" stroke="#4a4d52"/>
+  <rect x="70" y="58" width="1140" height="46" rx="8" fill="#2b2d30"/>
+  <circle cx="98" cy="81" r="7" fill="#e76f61"/>
+  <circle cx="122" cy="81" r="7" fill="#f4bf4f"/>
+  <circle cx="146" cy="81" r="7" fill="#5cc36b"/>
+  <text x="176" y="87" fill="#f1f3f4" font-family="Segoe UI, Arial, sans-serif" font-size="16">CodeCopyrightCheck Commandlet</text>
+
+  <text x="98" y="146" fill="#8ab4f8" font-family="Consolas, monospace" font-size="18">&gt; UnrealEditor-Cmd.exe PluginProject.uproject -run=CodeCopyrightCheck -ReportDir=Saved/CodeCopyrightEditor/Reports</text>
+  <text x="98" y="192" fill="#d6d6d6" font-family="Consolas, monospace" font-size="17">Scanning code copyright notices...</text>
+  <text x="98" y="226" fill="#d6d6d6" font-family="Consolas, monospace" font-size="17">Report written: Saved/CodeCopyrightEditor/Reports/CodeCopyrightReport.json</text>
+  <text x="98" y="260" fill="#d6d6d6" font-family="Consolas, monospace" font-size="17">Report written: Saved/CodeCopyrightEditor/Reports/CodeCopyrightReport.spdx</text>
+  <text x="98" y="294" fill="#d6d6d6" font-family="Consolas, monospace" font-size="17">Report written: Saved/CodeCopyrightEditor/Reports/REUSE-Report.md</text>
+
+  <rect x="98" y="332" width="1084" height="94" rx="6" fill="#1b1e22" stroke="#3b3f45"/>
+  <text x="124" y="370" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Summary</text>
+  <text x="124" y="402" fill="#cfd8dc" font-family="Consolas, monospace" font-size="16">Scanned: 84 | Eligible: 73 | Changeable: 0 | Unchanged: 70 | Protected: 3 | Conflicts: 0 | Failed: 0</text>
+
+  <rect x="98" y="456" width="1084" height="100" rx="6" fill="#13291b" stroke="#2d7a43"/>
+  <text x="124" y="500" fill="#9de8b0" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">PASS</text>
+  <text x="210" y="501" fill="#d8f5de" font-family="Segoe UI, Arial, sans-serif" font-size="18">No CI-relevant findings. Protected third-party notices were reported but not rewritten.</text>
+
+  <text x="98" y="606" fill="#cfd8dc" font-family="Segoe UI, Arial, sans-serif" font-size="18">Artifacts: JSON for automation, SPDX Tag/Value for compliance tooling, Markdown for human review.</text>
+</svg>

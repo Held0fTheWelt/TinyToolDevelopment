@@ -1,0 +1,9 @@
+[
+  {
+    "rule_id": "RULE-BRIDGE-SCD-IIS-0001",
+    "title": "SCD↔IIS bridge stays UCM-first and optional",
+    "severity": "normal",
+    "rule_text": "Cross-plugin SCD↔IIS value uses UCM route scd.migration.advice_from_handoff with neutral JSON contract scd-iis-advice.v1; never an adapter module inside either autark plugin; the bridge is optional and is never shipped in the Fab package.",
+    "applies_to": ["smart-content-diet", "internal-index-service"]
+  }
+]

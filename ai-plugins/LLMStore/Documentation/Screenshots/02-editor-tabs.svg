@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">LLM Store Editor Tabs</title>
+  <desc id="desc">Illustration of the LLM Store editor tabs and their purpose.</desc>
+  <rect width="1280" height="720" fill="#101216"/>
+  <rect x="70" y="55" width="1140" height="610" rx="16" fill="#1b1f27" stroke="#353c49"/>
+  <text x="105" y="112" fill="#f4f7fb" font-family="Segoe UI, Arial" font-size="32" font-weight="700">Tools - LLM Store</text>
+  <g font-family="Segoe UI, Arial">
+    <rect x="105" y="145" width="1070" height="50" rx="9" fill="#242a34"/>
+    <text x="132" y="177" fill="#73b7ff" font-size="18" font-weight="700">Setup</text>
+    <text x="250" y="177" fill="#d7dde7" font-size="18">Routes</text>
+    <text x="375" y="177" fill="#d7dde7" font-size="18">Agents</text>
+    <text x="500" y="177" fill="#d7dde7" font-size="18">Costs</text>
+    <text x="620" y="177" fill="#d7dde7" font-size="18">Governance</text>
+    <text x="790" y="177" fill="#d7dde7" font-size="18">Status</text>
+    <text x="910" y="177" fill="#d7dde7" font-size="18">Help</text>
+    <text x="1020" y="177" fill="#d7dde7" font-size="18">Advanced</text>
+    <rect x="120" y="204" width="500" height="170" rx="10" fill="#202733" stroke="#3e4b5e"/>
+    <text x="150" y="244" fill="#ffffff" font-size="24" font-weight="700">Setup</text>
+    <text x="150" y="280" fill="#b9c4d2" font-size="17">Provider, models, base URLs, keys, tests</text>
+    <rect x="660" y="204" width="500" height="170" rx="10" fill="#202733" stroke="#3e4b5e"/>
+    <text x="690" y="244" fill="#ffffff" font-size="24" font-weight="700">Routes</text>
+    <text x="690" y="280" fill="#b9c4d2" font-size="17">TaskKind, preferred model, fallback chain, policies</text>
+    <rect x="120" y="405" width="310" height="150" rx="10" fill="#202733" stroke="#3e4b5e"/>
+    <text x="150" y="445" fill="#ffffff" font-size="22" font-weight="700">Agents</text>
+    <text x="150" y="478" fill="#b9c4d2" font-size="16">Codex, Claude, Cursor</text>
+    <text x="150" y="504" fill="#b9c4d2" font-size="16">Authentication dialog</text>
+    <rect x="485" y="405" width="310" height="150" rx="10" fill="#202733" stroke="#3e4b5e"/>
+    <text x="515" y="445" fill="#ffffff" font-size="22" font-weight="700">Costs</text>
+    <text x="515" y="478" fill="#b9c4d2" font-size="16">Ledger, tokens, CSV</text>
+    <text x="515" y="504" fill="#b9c4d2" font-size="16">Provider/model/task views</text>
+    <rect x="850" y="405" width="310" height="150" rx="10" fill="#202733" stroke="#3e4b5e"/>
+    <text x="880" y="445" fill="#ffffff" font-size="22" font-weight="700">Status + Help</text>
+    <text x="880" y="478" fill="#b9c4d2" font-size="16">Readiness, blockers</text>
+    <text x="880" y="504" fill="#b9c4d2" font-size="16">In-editor explanation</text>
+  </g>
+</svg>
+

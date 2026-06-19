@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">LLM Store Workflow Overview</title>
+  <desc id="desc">Diagram of provider setup, route resolution, policies, execution, and cost tracking.</desc>
+  <rect width="1280" height="720" fill="#111318"/>
+  <rect x="60" y="60" width="1160" height="600" rx="18" fill="#1b1e25" stroke="#343a46"/>
+  <text x="90" y="115" fill="#f3f6fb" font-family="Segoe UI, Arial" font-size="34" font-weight="700">LLM Store Workflow</text>
+  <text x="90" y="150" fill="#aeb7c5" font-family="Segoe UI, Arial" font-size="18">Features call stable routes. The store resolves provider, model, policy, secret, health, and cost logging.</text>
+  <g font-family="Segoe UI, Arial" font-size="20" font-weight="600">
+    <rect x="95" y="230" width="175" height="92" rx="10" fill="#243447" stroke="#5ea7ff"/>
+    <text x="125" y="268" fill="#ffffff">Feature Tool</text>
+    <text x="125" y="296" fill="#b8c9de" font-size="15">docs.summarize</text>
+    <rect x="330" y="230" width="175" height="92" rx="10" fill="#253c36" stroke="#58d99a"/>
+    <text x="360" y="268" fill="#ffffff">Route</text>
+    <text x="360" y="296" fill="#bdebd3" font-size="15">fallback chain</text>
+    <rect x="565" y="230" width="175" height="92" rx="10" fill="#3c3424" stroke="#ffc857"/>
+    <text x="595" y="268" fill="#ffffff">Policy</text>
+    <text x="595" y="296" fill="#ffe0a6" font-size="15">local / cloud / cost</text>
+    <rect x="800" y="230" width="175" height="92" rx="10" fill="#3b293f" stroke="#d990ff"/>
+    <text x="830" y="268" fill="#ffffff">Provider</text>
+    <text x="830" y="296" fill="#e7c8f5" font-size="15">ollama, llama.cpp</text>
+    <rect x="1035" y="230" width="130" height="92" rx="10" fill="#422d2d" stroke="#ff8878"/>
+    <text x="1064" y="268" fill="#ffffff">Model</text>
+    <text x="1064" y="296" fill="#ffc7bf" font-size="15">wire name</text>
+  </g>
+  <g stroke="#7d8794" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M270 276 H330"/>
+    <path d="M505 276 H565"/>
+    <path d="M740 276 H800"/>
+    <path d="M975 276 H1035"/>
+  </g>
+  <g font-family="Segoe UI, Arial" font-size="18">
+    <rect x="180" y="430" width="230" height="90" rx="10" fill="#20252e" stroke="#4d5666"/>
+    <text x="210" y="467" fill="#ffffff" font-weight="700">Secret Store</text>
+    <text x="210" y="494" fill="#aeb7c5">env, keychain, vault</text>
+    <rect x="525" y="430" width="230" height="90" rx="10" fill="#20252e" stroke="#4d5666"/>
+    <text x="555" y="467" fill="#ffffff" font-weight="700">Execution</text>
+    <text x="555" y="494" fill="#aeb7c5">HTTP, stream, queue</text>
+    <rect x="870" y="430" width="230" height="90" rx="10" fill="#20252e" stroke="#4d5666"/>
+    <text x="900" y="467" fill="#ffffff" font-weight="700">Audit + Costs</text>
+    <text x="900" y="494" fill="#aeb7c5">provider, model, route</text>
+  </g>
+  <path d="M887 322 V385 H295 V430" fill="none" stroke="#7d8794" stroke-width="3" stroke-dasharray="8 8"/>
+  <path d="M887 322 V430" fill="none" stroke="#7d8794" stroke-width="3" stroke-dasharray="8 8"/>
+  <path d="M887 322 V385 H985 V430" fill="none" stroke="#7d8794" stroke-width="3" stroke-dasharray="8 8"/>
+</svg>
+

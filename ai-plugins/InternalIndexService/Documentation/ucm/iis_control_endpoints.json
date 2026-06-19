@@ -1,0 +1,165 @@
+{
+  "schema_version": "capability_mesh.endpoint_manifest.v1",
+  "endpoints": [
+    {
+      "endpoint_id": "iis.control.state.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "State"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json", "default": "{}" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    },
+    {
+      "endpoint_id": "iis.control.tune.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "Tune"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    },
+    {
+      "endpoint_id": "iis.diagnostics.recent.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "DiagnosticsRecent"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json", "default": "{}" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    },
+    {
+      "endpoint_id": "iis.perf.last.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "PerfLast"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json", "default": "{}" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    },
+    {
+      "endpoint_id": "iis.perf.run.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "PerfRun"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json", "default": "{}" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    },
+    {
+      "endpoint_id": "iis.index.sync.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "IndexSync"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json", "default": "{}" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    },
+    {
+      "endpoint_id": "iis.index.rebuild.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "IndexRebuild"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json", "default": "{}" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    },
+    {
+      "endpoint_id": "iis.index.import.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "IndexImport"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    },
+    {
+      "endpoint_id": "iis.control.persist.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "Persist"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json", "default": "{}" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    },
+    {
+      "endpoint_id": "iis.control.reset.endpoint",
+      "invocation_mode": "reflection_static_function",
+      "target": {
+        "class_path": "/Script/InternalIndexService.IISControlEndpoints",
+        "function_name": "Reset"
+      },
+      "parameters": [
+        { "param": "RequestJson", "bind": "$route.input.request_json", "default": "{}" },
+        { "param": "ResponseJson", "direction": "out", "bind": "$route.output.response_json" }
+      ],
+      "availability": {
+        "required_plugin_names": ["InternalIndexService"],
+        "requires_editor": false
+      }
+    }
+  ]
+}

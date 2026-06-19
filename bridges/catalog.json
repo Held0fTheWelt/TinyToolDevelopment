@@ -1,0 +1,17 @@
+{
+  "bridges": [
+    {
+      "bridge_id": "BRIDGE-SCD-IIS-0001",
+      "plugin_a": "smart-content-diet",
+      "plugin_b": "internal-index-service",
+      "mechanism": "ucm_route",
+      "route_id": "scd.migration.advice_from_handoff",
+      "neutral_json_contract": "contracts/scd-iis-advice.v1.json",
+      "direction": "scd->iis",
+      "status": "active",
+      "introduced_in_version": "1.0.3",
+      "doc_link_a": "editor-tools/SmartContentDiet/bridges/iis.md",
+      "doc_link_b": "ai-plugins/InternalIndexService/bridges/scd.md"
+    }
+  ]
+}
