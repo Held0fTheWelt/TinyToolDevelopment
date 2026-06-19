@@ -15,7 +15,7 @@ operator-side upsell layer.
 Copy or merge the endpoint definitions from:
 
 ```text
-Documentation/ai-plugins/InternalIndexService/Documentation/ucm/iis_control_endpoints.json
+Documentation/ai-plugins/InternalIndexService/ucm/iis_control_endpoints.json
 ```
 
 into your project's UCM endpoint manifest (for example `Config/UnrealCapabilityMesh/endpoints/`).
@@ -58,5 +58,5 @@ See the shipped `UserManual.md` and `QUICKSTART.md` in the IIS plugin package.
 
 ## Reference
 
-- [UserManual.md](UserManual.md)
-- [QUICKSTART.md](QUICKSTART.md)
+The standalone console and Blueprint surfaces are documented in the shipped IIS package docs:
+`Documentation/UserManual.md` and `Documentation/QUICKSTART.md`.
