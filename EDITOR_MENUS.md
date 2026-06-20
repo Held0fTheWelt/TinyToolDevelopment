@@ -62,7 +62,7 @@ Tools
 
 ## Per-Product References
 
-- [Unified MCP Server](ai-plugins/UnifiedMcpServer/UserManual.md)
+- [Unified MCP Server](ai-plugins/UnifiedMcpServer/README.md)
 - [Internal Index Service](ai-plugins/InternalIndexService/Documentation/UserManual.md)
 - [Code Copyright Editor](editor-tools/CodeCopyrightEditor/Documentation/UserManual.md)
 - [Lightweight Editor Mode](editor-tools/LightweightEditorMode/Documentation/UserManual.md)
