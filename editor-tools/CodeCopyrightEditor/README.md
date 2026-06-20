@@ -1,33 +1,21 @@
 # Code Copyright Editor
 
-Code Copyright Editor keeps Unreal Engine source headers consistent across a project. It can update the Project Settings copyright notice, scan the source tree, rewrite selected files, and run as a headless CI check.
+Code Copyright Editor keeps Unreal project and source-file copyright notices consistent through a scan-first workflow. It supports editor review, selected rewrites, project notice updates, commandlet checks, and JSON/SPDX/REUSE-style reports while avoiding legal-proof claims.
 
-## Start Here
+Not a verbatim copy of shipped docs.
 
-- [Documentation overview](Documentation/README.md): complete documentation index.
-- [Buyer guide](Documentation/BuyerGuide.md): buyer-friendly introduction and workflows.
-- [User manual](Documentation/UserManual.md): editor workflow and UI usage.
-- [Commandlet and CI](Documentation/CommandletAndCI.md): commandlet usage and CI behavior.
-- [Troubleshooting](Documentation/Troubleshooting.md): common problems and fixes.
+## What It Does
 
-## Key References
+- Configures owner, license, templates, scan scope, protection markers, and report behavior.
+- Scans source without mutation and classifies files before any rewrite is attempted.
+- Applies only selected, changeable source notice updates and project notice changes.
+- Writes local release or CI evidence reports from the same result model used by the UI.
+- Exposes optional UCM/UMCP routes for scan, apply, notice update, report writing, and job status workflows.
 
-- [Settings reference](Documentation/SettingsReference.md)
-- [Template reference](Documentation/TemplateReference.md)
-- [Reports and compliance](Documentation/ReportsAndCompliance.md)
-- [Technical overview](Documentation/TechnicalOverview.md)
-- [Code documentation](Documentation/CodeDocumentation.md)
-- [Release checklist](Documentation/ReleaseChecklist.md)
-- [Changelog](CHANGELOG.md)
+## Best Entry Points
 
-## Fab Product
+- Use the shipped `Documentation/QUICKSTART.md` for first scan and selected apply flow.
+- Use `Documentation/UserManual.md` and `Documentation/SettingsReference.md` for template, metadata, and scan-scope setup.
+- Use `Documentation/CommandletAndCI.md`, `Documentation/ReportsAndCompliance.md`, and `Documentation/TROUBLESHOOTING.md` for headless checks and report behavior.
 
-Code Copyright Editor is available on Fab:
-
-https://www.fab.com/listings/e30d9b22-9c8b-41ff-8887-d2cce63a119f
-
-## Support
-
-For questions, setup help, and product support:
-
-https://discord.gg/HycgjVkK4J
+Fab listing: <https://www.fab.com/listings/e30d9b22-9c8b-41ff-8887-d2cce63a119f>

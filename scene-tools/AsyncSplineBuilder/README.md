@@ -1,33 +1,21 @@
 # Async Spline Builder
 
-Async Spline Builder generates road, race-track, pipe, rail, wall, and side-object spline meshes without forcing large editor stalls.
+Async Spline Builder is a scene-authoring plugin for roads, tracks, pipes, rails, walls, and side objects generated along Unreal splines. It focuses on repeatable segment workflows, async rebuilds, tagged generated components, optional landscape operations, and native editor track-shape authoring.
 
-## Start Here
+Not a verbatim copy of shipped docs.
 
-- [Documentation overview](Documentation/README.md): complete documentation index.
-- [Editor menu layout](../../EDITOR_MENUS.md): shared Tools menu paths across products.
-- [Buyer guide](Documentation/BuyerGuide.md): product overview, workflows, strengths, and limitations.
-- [User manual](Documentation/UserManual.md): editor workflow from first actor placement to rebuilds.
-- [Settings reference](Documentation/SettingsReference.md): actor settings and recommended baselines.
-- [Troubleshooting](Documentation/Troubleshooting.md): setup, build, trace, and geometry issues.
+## What It Does
 
-## Key References
+- Builds road, race-track, pipe, rail, wall, and side-object geometry from spline actors.
+- Supports immediate rebuilds and async rebuilds with visible editor feedback.
+- Keeps generated components tagged so cleanup and targeted rebuilds stay predictable.
+- Includes optional landscape snapping, deformation, paint, ground-wall, and drop-wall workflows.
+- Exposes optional UCM/UMCP routes without making automation plugins required.
 
-- [Landscape and walls](Documentation/LandscapeAndWalls.md)
-- [Automation and QA](Documentation/AutomationAndQA.md)
-- [Technical overview](Documentation/TechnicalOverview.md)
-- [Code documentation](Documentation/CodeDocumentation.md)
-- [Release checklist](Documentation/ReleaseChecklist.md)
-- [Changelog](CHANGELOG.md)
+## Best Entry Points
 
-## Fab Product
+- Use the shipped `Documentation/QUICKSTART.md` for first-run setup in an installed package.
+- Use `Documentation/UserManual.md` for full editor workflow and settings guidance.
+- Use `Documentation/SettingsReference.md` and `Documentation/TROUBLESHOOTING.md` when configuring advanced segment, async, terrain, or wall behavior.
 
-Async Spline Builder is available on Fab:
-
-https://www.fab.com/listings/41f15640-e169-490c-9edf-bd3255699043
-
-## Support
-
-For questions, setup help, and product support:
-
-https://discord.gg/HycgjVkK4J
+Fab listing: <https://www.fab.com/listings/41f15640-e169-490c-9edf-bd3255699043>

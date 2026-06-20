@@ -1,32 +1,21 @@
 # LogLevelEditor
 
-LogLevelEditor is an Unreal Engine editor plugin for discovering log categories and changing their verbosity from a focused editor dashboard.
+LogLevelEditor is a focused Unreal Editor surface for discovering log categories, inspecting runtime/default verbosity, hiding noisy channels, and persisting intentional verbosity overrides in a DataAsset.
 
-## Start Here
+Not a verbatim copy of shipped docs.
 
-- [Documentation overview](Documentation/README.md): complete documentation index.
-- [Buyer guide](Documentation/BuyerGuide.md): buyer-friendly overview and practical value.
-- [User manual](Documentation/UserManual.md): setup and daily editor workflow.
-- [Settings reference](Documentation/SettingsReference.md): settings, defaults, and recommended baseline.
-- [Troubleshooting](Documentation/Troubleshooting.md): common problems and fixes.
+## What It Does
 
-## Key References
+- Scans configured source roots for Unreal log-category macros.
+- Shows category verbosity so teams can tune diagnostics without editing config by hand.
+- Stores intentional overrides in a versionable DataAsset.
+- Lets users hide temporary or persistent noisy categories without deleting scan evidence.
+- Exposes optional UCM/UMCP routes for scan, query, set, hide, clear, and job status flows.
 
-- [Technical overview](Documentation/TechnicalOverview.md)
-- [Code documentation](Documentation/CodeDocumentation.md)
-- [FAQ](Documentation/FAQ.md)
-- [Release checklist](Documentation/ReleaseChecklist.md)
-- [Changelog](CHANGELOG.md)
-- [Legacy packaged readme](Readme.pdf)
+## Best Entry Points
 
-## Fab Product
+- Use the shipped `Documentation/QUICKSTART.md` for a first category scan and verbosity change.
+- Use `Documentation/UserManual.md` for dashboard and DataAsset workflows.
+- Use `Documentation/SettingsReference.md` and `Documentation/TROUBLESHOOTING.md` for scan roots, hidden channels, and persistence behavior.
 
-Log Level Editor is available on Fab:
-
-https://www.fab.com/listings/e9d934de-0432-452d-b899-be2461859f76
-
-## Support
-
-For questions, setup help, and product support:
-
-https://discord.gg/HycgjVkK4J
+Fab listing: <https://www.fab.com/listings/e9d934de-0432-452d-b899-be2461859f76>

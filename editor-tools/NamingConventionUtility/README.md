@@ -1,32 +1,21 @@
 # Naming Convention Utility
 
-Naming Convention Utility applies consistent asset prefixes and suffixes across selected Content Browser folders with preview, validation, and safe Unreal asset rename workflows.
+Naming Convention Utility helps teams apply Unreal asset prefixes, suffixes, and cleanup rules through a preview-first rename workflow. It is built around reviewable plans, skip reasons, and guarded AssetTools execution rather than blind string replacement.
 
-## Start Here
+Not a verbatim copy of shipped docs.
 
-- [Documentation overview](Documentation/README.md): complete documentation index.
-- [Buyer guide](Documentation/BuyerGuide.md): use cases and fit.
-- [User manual](Documentation/UserManual.md): configuring and applying conventions.
-- [Settings reference](Documentation/SettingsReference.md): DataAsset fields and recommended baselines.
-- [Troubleshooting](Documentation/Troubleshooting.md): common problems and fixes.
+## What It Does
 
-## Key References
+- Stores naming rules in a DataAsset or imports them from DataTable rows.
+- Builds non-mutating rename previews before any asset changes happen.
+- Detects unsupported types, invalid names, existing targets, duplicate targets, and stale assets.
+- Applies accepted renames through Unreal AssetTools and optional redirector cleanup.
+- Provides optional UCM/UMCP routes for preview, apply, import, defaults, clear, and job status workflows.
 
-- [Technical overview](Documentation/TechnicalOverview.md)
-- [Code documentation](Documentation/CodeDocumentation.md)
-- [FAQ](Documentation/FAQ.md)
-- [Release checklist](Documentation/ReleaseChecklist.md)
-- [Changelog](CHANGELOG.md)
-- [Legacy packaged readme](Readme.pdf)
+## Best Entry Points
 
-## Fab Product
+- Use the shipped `Documentation/QUICKSTART.md` for a first preview/apply pass.
+- Use `Documentation/UserManual.md` for Content Browser actions and DataTable import.
+- Use `Documentation/SettingsReference.md` and `Documentation/TROUBLESHOOTING.md` for rule source, confirmation, redirector, and skip-reason behavior.
 
-Naming Convention Utility is available on Fab:
-
-https://www.fab.com/listings/60aefcc0-6464-4a69-98d1-7ba02c6e06f2
-
-## Support
-
-For questions, setup help, and product support:
-
-https://discord.gg/HycgjVkK4J
+Fab listing: <https://www.fab.com/listings/60aefcc0-6464-4a69-98d1-7ba02c6e06f2>

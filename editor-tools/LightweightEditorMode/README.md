@@ -1,34 +1,21 @@
 # Lightweight Editor Mode
 
-Lightweight Editor Mode lets artists, level designers, technical artists, and programmers temporarily reduce Unreal Editor rendering cost while working inside heavy projects.
+Lightweight Editor Mode is a reversible Unreal Editor performance overlay. It applies profile-based viewport, scalability, CVar, Unlit, and realtime reductions while keeping the main project configuration and runtime game settings outside its mutation boundary.
 
-## Start Here
+Not a verbatim copy of shipped docs.
 
-- [Documentation overview](Documentation/README.md): complete documentation index.
-- [User manual](Documentation/UserManual.md): normal editor workflow.
-- [Buyer guide](Documentation/BuyerGuide.md): product overview and intended users.
-- [Settings reference](Documentation/SettingsReference.md): exposed settings.
-- [Troubleshooting](Documentation/Troubleshooting.md): common editor cases.
+## What It Does
 
-## Key References
+- Provides Mild, Balanced, Aggressive, and Extreme editor profiles.
+- Applies cheaper editor viewport/rendering settings for heavy scenes, demos, or laptop work.
+- Captures session backups so disabling the mode can restore owned editor state.
+- Keeps startup enable, stale-session recovery, and profile refresh behavior explicit.
+- Offers optional UCM/UMCP JSON actions for the same enable, disable, refresh, and read-state workflow.
 
-- [Performance tuning reference](Documentation/PerformanceTuningReference.md)
-- [Validation and QA](Documentation/ValidationAndQA.md)
-- [Compatibility and packaging](Documentation/CompatibilityAndPackaging.md)
-- [Integration notes](Documentation/IntegrationNotes.md)
-- [Technical overview](Documentation/TechnicalOverview.md)
-- [Code documentation](Documentation/CodeDocumentation.md)
-- [Release checklist](Documentation/ReleaseChecklist.md)
-- [Changelog](CHANGELOG.md)
+## Best Entry Points
 
-## Fab Product
+- Use the shipped `Documentation/QUICKSTART.md` for first-run enable/disable flow.
+- Use `Documentation/UserManual.md` and `Documentation/SettingsReference.md` for profile tuning.
+- Use `Documentation/TROUBLESHOOTING.md` when viewport, CVar, or restore behavior needs diagnosis.
 
-Lightweight Editor Performance Mode is available on Fab:
-
-https://www.fab.com/listings/94911975-ec7d-4d7c-8408-04bc647eb373
-
-## Support
-
-For questions, setup help, and product support:
-
-https://discord.gg/HycgjVkK4J
+Fab listing: <https://www.fab.com/listings/94911975-ec7d-4d7c-8408-04bc647eb373>
