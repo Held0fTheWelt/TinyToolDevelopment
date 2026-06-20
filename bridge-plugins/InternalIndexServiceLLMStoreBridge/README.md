@@ -1,169 +1,38 @@
 # IIS LLM Store Bridge
 
-IIS LLM Store Bridge is an optional companion plugin for teams that use both **Internal Index Service** and **LLM Store** in the same Unreal Engine project.
+> Not a verbatim copy of shipped docs. This online page is an overview and routing surface; shipped buyer docs stay in the plugin package.
 
-The plugin registers one IIS embedding executor named `llmstore`. IIS can then submit embedding jobs through its normal executor registry while LLM Store remains responsible for provider selection, model routing, runtime modes, local-only rules, fallback policy, governance, and secrets.
+IIS LLM Store Bridge is a free companion bridge for projects that use both **Internal Index Service** and **LLM Store**. It registers the IIS embedding executor id `llmstore` and adapts IIS embedding route requests to LLM Store embedding routes without moving provider governance into IIS.
 
-## UCM-First Note
+## What It Does
 
-In the current Tiny Tool Development stack, **Unreal Capability Mesh (UCM)** is the preferred integration layer for cross-product workflows. Use this Freebie Bridge only when a project does not own or enable UCM, or when you need a concrete reference for building a narrow direct adapter.
+- Connects IIS embedding jobs with LLM Store routes and governance.
+- Keeps IIS responsible for indexing, vector storage, retrieval, context packs, and evidence access.
+- Keeps LLM Store responsible for providers, models, secrets, runtime modes, fallback policy, costs, and route governance.
+- Exposes small Blueprint diagnostics for executor registration, route resolution, and embedding smoke checks.
+- Restores the previous IIS executor setting when the bridge unloads or the editor exits.
 
 ## Product Boundary
 
-This plugin is intentionally small. It does not replace or bundle either core product, and it does not replace UCM in projects that use the full Tiny Tool Development stack.
+The bridge connects systems without blurring the ownership boundaries of the core plugins. It is not a replacement for IIS, LLM Store, or UCM, and it is not a standalone embedding product.
 
-| Product | Responsibility |
-| --- | --- |
-| Internal Index Service (IIS) | Evidence import, indexing, cataloging, retrieval, vector payload storage, context packs, and agent evidence access. |
-| IIS LLM Store Bridge | Request/response adaptation between the IIS embedding executor API and the LLM Store embedding route API. |
-| LLM Store | Providers, models, routes, policies, runtime modes, governance, secrets, cost rules, and fallbacks. |
+## Status
 
-Use the bridge when you want IIS embedding jobs to follow LLM Store policy instead of hardcoding provider or model details inside IIS.
+- Category: Bridge Plugins
+- Status: Free companion
+- Fab: Public docs/routing page, package docs ship with the bridge
+- Current focus: direct IIS embedding executor adapter for LLM Store embedding routes
 
-## Why Use It
+## Synergies
 
-- Route IIS embeddings through stable LLM Store route names such as `iis.embedding.code`.
-- Keep IIS independent from provider IDs, model IDs, cloud credentials, and fallback logic.
-- Apply LLM Store runtime modes such as mock, local-only, fast, deep, or disabled.
-- Use local or deterministic mock embedding workflows for development, tests, and CI-adjacent validation.
-- Expose simple Blueprint diagnostics and embedding smoke tests without bypassing LLM Store governance.
+- **Internal Index Service** uses the bridge only for embedding executor handoff; lexical search and context packs remain IIS-owned.
+- **LLM Store** remains the governed provider and route owner for embedding execution.
+- **Unreal Capability Mesh** remains the preferred broader orchestration layer when a project needs cross-product workflow policy.
 
-## Runtime Flow
+## Package Docs
 
-```text
-IIS embedding job
-  -> FIISEmbeddingRequest
-  -> IIS executor registry
-  -> executor id: llmstore
-  -> IIS LLM Store Bridge
-  -> FLLMStoreEmbeddingRequest
-  -> ILLMStore::ExecuteEmbeddingRoute
-  -> FLLMStoreEmbeddingResponse
-  -> FIISEmbeddingResponse
-  -> IIS vector payload storage
-```
+Buyer docs ship inside the plugin package as `Documentation/QUICKSTART.md`, `Documentation/UserManual.md`, `Documentation/SettingsReference.md`, `Documentation/TROUBLESHOOTING.md`, `Documentation/FAQ.md`, `Documentation/THIRD_PARTY_SOFTWARE.md`, and `Documentation/SOURCE_OVERVIEW.md`.
 
-Typical IIS embedding task routes:
+## Media
 
-- `iis.embedding.code`
-- `iis.embedding.blueprint`
-- `iis.embedding.asset`
-
-LLM Store resolves those routes. The bridge only copies neutral request and response data across the plugin boundary.
-
-## Requirements
-
-- Unreal Engine 5.4.
-- Internal Index Service installed and enabled.
-- LLM Store installed and enabled.
-- LLM Store embedding routes configured or available through defaults.
-- A host project or engine plugin setup that contains all three plugins.
-
-The bridge depends only on public interface modules:
-
-- `InternalIndexServiceInterface`
-- `LLMStoreInterface`
-
-The plugin module is runtime-only and targets the UE 5.4 plugin line.
-
-## Quick Start
-
-Place all three plugins side by side:
-
-```text
-Plugins/
-  InternalIndexService/
-  LLMStore/
-  InternalIndexServiceLLMStoreBridge/
-```
-
-Enable them in the `.uproject`:
-
-```json
-{
-  "Plugins": [
-    { "Name": "InternalIndexService", "Enabled": true },
-    { "Name": "LLMStore", "Enabled": true },
-    { "Name": "InternalIndexServiceLLMStoreBridge", "Enabled": true }
-  ]
-}
-```
-
-Build the project and start the editor. A successful startup should log:
-
-```text
-IIS LLM Store Bridge registered embedding executor 'llmstore'.
-```
-
-Then verify one embedding path:
-
-1. Configure or confirm the required IIS embedding routes in LLM Store.
-2. Import evidence and build embedding jobs in IIS.
-3. Execute a small embedding batch.
-4. Confirm IIS receives vectors plus provider/model metadata from LLM Store.
-5. Disable or block the route in LLM Store and confirm IIS receives a controlled governance failure.
-
-## Blueprint Access
-
-The bridge exposes Blueprint helper nodes through:
-
-```text
-UInternalIndexServiceLLMStoreBridgeBlueprintLibrary
-```
-
-Node category:
-
-```text
-Internal Index Service | LLM Store Bridge
-```
-
-Blueprint can check registration, list IIS embedding executors, resolve an IIS embedding route through LLM Store, build an IIS embedding request, and execute one embedding request for diagnostics or smoke testing. Blueprint still does not choose providers, models, or secrets.
-
-See [Blueprint usage](Documentation/BLUEPRINT_USAGE.md) for node-by-node examples.
-
-## What It Does Not Do
-
-The bridge does not:
-
-- index Unreal projects;
-- extract Blueprint or C++ evidence;
-- store vectors;
-- run search or retrieval;
-- choose providers or models itself;
-- store provider secrets;
-- call external providers directly;
-- execute chat or completion routes;
-- generate AI answers;
-- mutate assets, Blueprints, source files, or project settings.
-
-All model routing stays inside LLM Store. All indexing and vector persistence stay inside IIS.
-
-## Documentation
-
-- [Documentation overview](Documentation/README.md)
-- [Buyer guide](Documentation/BUYER_GUIDE.md)
-- [Quickstart](Documentation/QUICKSTART.md)
-- [Blueprint usage](Documentation/BLUEPRINT_USAGE.md)
-- [Integration details](Documentation/INTEGRATION.md)
-- [Source overview](Documentation/SOURCE_OVERVIEW.md)
-- [Troubleshooting](Documentation/TROUBLESHOOTING.md)
-- [Release checklist](Documentation/RELEASE_CHECKLIST.md)
-- [Changelog](CHANGELOG.md)
-
-## Support
-
-For questions, setup help, and product support, join the Discord server:
-
-https://discord.gg/HycgjVkK4J
-
-## Security and Governance
-
-The bridge never receives or stores provider secrets. Provider credentials remain owned by LLM Store.
-
-The bridge does not bypass LLM Store route governance. If a route is disabled, unavailable, blocked by runtime mode, blocked by local-only policy, or missing a valid provider/model, IIS receives a controlled embedding failure with the LLM Store error code and message.
-
-## Version
-
-Current bridge version: `1.0.1`.
-
-This version targets the IIS and LLM Store public interfaces available in the Unreal Engine 5.4 plugin line.
+The public media folder contains overview and route-ownership visuals for the bridge.
