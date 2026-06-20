@@ -1,5 +1,7 @@
 # Unreal Integration Intelligence
 
+> Not a verbatim copy of shipped docs. This online page is an overview and routing surface; shipped buyer docs stay in the plugin package.
+
 Unreal Integration Intelligence (UII) is an Unreal Engine project analysis and integration-intelligence plugin for evidence export, migration planning, architecture review, and tool handoff workflows.
 
 UII prepares structured project evidence that other tools can consume. In the current stack, UCM is the preferred way to route UII evidence into IIS, PRS, Smart Content Diet, or agent-facing workflows. Freebie Bridges remain available only for no-UCM projects and as direct-adapter examples.
@@ -30,7 +32,7 @@ The Freebie Bridges below are retained for teams that do not use UCM and as refe
 ## Status
 
 - Category: AI Plugins
-- Status: In preparation
+- Status: Advanced Preview
 - Fab: Not listed yet
 - Current focus: evidence export, analysis artifacts, planning packages, and bridge-ready contracts
 

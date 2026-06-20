@@ -1,5 +1,7 @@
 # Project Restructure Service
 
+> Not a verbatim copy of shipped docs. This online page is an overview and routing surface; shipped buyer docs stay in the plugin package.
+
 Project Restructure Service (PRS) is a safe, gated project restructuring and placement executor for Unreal Engine workflows.
 
 PRS is designed to consume evidence and plans from surrounding tools while keeping mutation explicit, reviewed, and reversible. IIS can provide retrieval and project evidence, but IIS itself remains read-only; PRS is the separate executor layer for controlled restructuring.
@@ -30,7 +32,7 @@ The Freebie Bridge below is retained for teams that do not use UCM and as a refe
 ## Status
 
 - Category: AI Plugins
-- Status: In preparation
+- Status: Advanced Preview
 - Fab: Not listed yet
 - Current focus: plan loading, dry-run, apply gate, rollback, and executor safety
 
