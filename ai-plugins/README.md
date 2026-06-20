@@ -18,4 +18,5 @@ Unreal Capability Mesh (UCM) is the preferred cross-product integration layer fo
 
 AI infrastructure plugins share the **Tools → AI** section in the editor. Unified MCP Server exposes lifecycle actions under **Universal MCP**; Internal Index Service, Unreal Integration Intelligence, and Project Restructure Service register alongside it. See [Editor menu layout](../EDITOR_MENUS.md).
 
-The product folders in this category are documentation and showcase entries. Check each product folder for the complete documentation index, buyer guide, user manual, and technical references.
+The product folders in this category are online overview and routing entries. Package-specific buyer
+docs stay with the shipped plugins unless a product page links to a curated public copy.
