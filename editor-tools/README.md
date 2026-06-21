@@ -1,6 +1,6 @@
 # Editor Tools
 
-This category contains Unreal Editor productivity tools for code hygiene, naming, logging, performance, validation, and project workflow improvements.
+This category contains Unreal Editor productivity tools for governance, code hygiene, documentation health, naming, logging, performance, validation, asset quality, and project workflow improvements.
 
 ## Products
 
@@ -12,6 +12,7 @@ This category contains Unreal Editor productivity tools for code hygiene, naming
 | Naming Convention Utility | Applies validated asset prefix and suffix conventions to Content Browser folders. | [Overview](NamingConventionUtility/README.md) | [Fab product](https://www.fab.com/listings/60aefcc0-6464-4a69-98d1-7ba02c6e06f2) |
 | Performance Preset Wizard | Creates and applies reusable performance presets with scalability settings and CVar overrides. | [Overview](PerformancePresetWizard/README.md) | [Fab product](https://www.fab.com/listings/39d1e5ea-4135-4197-91de-4c2193eb0d9c) |
 | Smart Content Diet | Reviews Unreal assets for optimization candidates, explains findings, and supports guarded QuickFix/reduction workflows. | [Overview](SmartContentDiet/README.md) | Not listed yet |
+| Smart Documentation Assistant | Audits C++ source documentation and drafts review-gated documentation-only patches. | [Overview](../ai-plugins/SmartDocumentationAssistant/README.md) | Not listed yet |
 
 ## Notes
 

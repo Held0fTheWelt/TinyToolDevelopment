@@ -24,7 +24,7 @@ This repository should not contain private credentials, local machine state, gen
 | Foundation Plugins | [foundation-plugins](foundation-plugins/README.md) | Cross-product interoperability, capability routing, setup manifests, and shared integration surfaces. |
 | Engine Plugins | [engine-plugins](engine-plugins/README.md) | Engine-level infrastructure plugins, protocol hosts, shared runtime/editor contracts, UCM, and extensibility surfaces. |
 | Scene Tools | [scene-tools](scene-tools/README.md) | World, spline, track, environment, and scene-authoring tools. |
-| Editor Tools | [editor-tools](editor-tools/README.md) | Productivity, validation, naming, logging, performance, and workflow tools for Unreal Editor. |
+| Editor Tools | [editor-tools](editor-tools/README.md) | Governance, documentation health, diagnostics, asset quality, rendering review, validation, naming, logging, performance, and workflow tools for Unreal Editor. |
 | Freebie Bridge Plugins | [bridge-plugins](bridge-plugins/README.md) | Optional no-UCM fallback and reference plugins that show how direct adapters should be built. |
 
 ## Main Products

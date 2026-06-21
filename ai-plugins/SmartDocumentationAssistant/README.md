@@ -18,7 +18,8 @@ SDA improves source documentation. It does not refactor runtime behavior, own pr
 
 ## Status
 
-- Category: AI Plugins
+- Category: Editor Tools
+- Product family: Editor Governance Tools
 - Status: Advanced Preview
 - Fab: Not listed yet
 - Current focus: standalone scans, provider disclosure, prompt packs, patch plans, and review-gated documentation-only apply
