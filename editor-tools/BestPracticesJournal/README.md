@@ -19,7 +19,7 @@ BPJ is decision support. It does not plan patches, apply project changes, roll b
 ## Status
 
 - Category: Editor Tools
-- Status: Advanced Preview
+- Status: In Publishment
 - Fab: Not listed yet
 - Current focus: practice governance, application briefs, outcome import, storage profiles, and optional route/provider handoffs
 
