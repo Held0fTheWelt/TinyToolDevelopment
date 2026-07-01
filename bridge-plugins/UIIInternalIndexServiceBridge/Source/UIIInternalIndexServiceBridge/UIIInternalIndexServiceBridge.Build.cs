@@ -1,4 +1,4 @@
-/* Copyright (c) 2025-2026 Yves Tanas
+/* Copyright (c) 2025-2026 Your Company or Name
  * License-Identifier: LicenseRef-Fab-Standard-EULA */
 
 using UnrealBuildTool;

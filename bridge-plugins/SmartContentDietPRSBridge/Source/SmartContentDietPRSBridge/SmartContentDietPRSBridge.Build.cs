@@ -1,4 +1,4 @@
-/* Copyright (c) 2025-2026 Yves Tanas
+/* Copyright (c) 2025-2026 Your Company or Name
  * License-Identifier: LicenseRef-Fab-Standard-EULA
  *
  * This file is part of the "SmartContentDiet PRS Bridge" Unreal Engine plugin.
