@@ -11,7 +11,7 @@ This category contains plugins focused on AI infrastructure, model routing, prov
 | LLM Store | Central management for AI providers, models, routes, policies, costs, secrets, and optional agents inside Unreal Engine. | [Overview](LLMStore/README.md) | [Fab product](https://www.fab.com/listings/4e9c6062-e3e7-4113-93d1-f08d6e276020) |
 | Project Restructure Service | Safe, gated project restructuring and placement executor. PRS can consume IIS evidence, but IIS remains read-only. | [Overview](ProjectRestructureService/README.md) | Not listed yet |
 | Unified MCP Server | Marketplace-available editor-only loopback MCP host with provider registry, bearer-token handshake, UCM route exposure, and optional provider-tool aggregation. | [Overview](UnifiedMcpServer/README.md) | [Fab product](https://www.fab.com/listings/f5ded18c-38b5-4e12-88cb-120f484e282f) |
-| Unreal Integration Intelligence | Project analysis, evidence export, migration planning, integration intelligence, and IIS handoff preparation. | [Overview](UnrealIntegrationIntelligence/README.md) | Not listed yet |
+| Unreal Integration Intelligence | In-publishment project evidence export, System Dossier, review packs, RAG chunks, integration intelligence, and handoff preparation. | [Overview](UnrealIntegrationIntelligence/README.md) | Not listed yet |
 
 ## Notes
 
