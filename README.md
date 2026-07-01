@@ -33,6 +33,7 @@ This repository should not contain private credentials, local machine state, gen
 | --- | --- | --- | --- | --- |
 | Internal Index Service | AI Plugins | Local indexing, retrieval, context packs, embedding jobs, and agent-facing search for Unreal Engine projects. | [Overview](ai-plugins/InternalIndexService/README.md) | [Fab product](https://www.fab.com/listings/9dfa7b61-cf4e-476b-8edc-253c7c5585e9) |
 | LLM Store | AI Plugins | Central management for AI providers, models, routes, policies, costs, secrets, and optional agents inside Unreal Engine. | [Overview](ai-plugins/LLMStore/README.md) | [Fab product](https://www.fab.com/listings/4e9c6062-e3e7-4113-93d1-f08d6e276020) |
+| Asset Plugin Maker | AI Plugins | In-publishment asset distillation, target-plugin builds, provenance, BOMs, validation reports, and release candidate evidence for Unreal Engine content plugins. | [Overview](ai-plugins/AssetPluginMaker/README.md) | Not listed yet |
 | Project Restructure Service | AI Plugins | Safe, gated project restructuring and placement executor that can consume IIS evidence while keeping IIS itself read-only. | [Overview](ai-plugins/ProjectRestructureService/README.md) | Not listed yet |
 | Unified MCP Server | AI Plugins | Marketplace-available editor-only loopback MCP host with provider registry, bearer-token handshake, UCM route exposure, and optional provider-tool aggregation. | [Overview](ai-plugins/UnifiedMcpServer/README.md) | [Fab product](https://www.fab.com/listings/f5ded18c-38b5-4e12-88cb-120f484e282f) |
 | Unreal Integration Intelligence | AI Plugins | Project evidence export, migration planning, integration analysis, and handoff tooling for Unreal Engine projects. | [Overview](ai-plugins/UnrealIntegrationIntelligence/README.md) | Not listed yet |
@@ -118,6 +119,7 @@ Product folders keep their product/plugin names, for example `LLMStore`, `AsyncS
 
 ```text
 ai-plugins/
+  AssetPluginMaker/
   InternalIndexService/
   LLMStore/
   ProjectRestructureService/
