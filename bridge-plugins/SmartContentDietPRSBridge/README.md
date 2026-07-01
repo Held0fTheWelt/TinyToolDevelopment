@@ -69,7 +69,7 @@ The bridge does not decide what should be moved, bypass PRS validation, apply ch
 
 ## Status
 
-- Category: Freebie Bridge Plugins
+- Category: Example Projects
 - Status: In preparation
 - Fab: Not listed separately
 

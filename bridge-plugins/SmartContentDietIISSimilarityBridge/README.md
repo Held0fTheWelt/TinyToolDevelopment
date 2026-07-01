@@ -64,7 +64,7 @@ The bridge does not scan assets, mutate assets, generate fixes, choose embedding
 
 ## Status
 
-- Category: Freebie Bridge Plugins
+- Category: Example Projects
 - Status: In preparation
 - Fab: Not listed separately
 

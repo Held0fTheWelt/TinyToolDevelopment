@@ -18,7 +18,7 @@ The bridge connects systems without blurring the ownership boundaries of the cor
 
 ## Status
 
-- Category: Bridge Plugins
+- Category: Example Projects
 - Status: Free companion
 - Fab: Public docs/routing page, package docs ship with the bridge
 - Current focus: direct IIS embedding executor adapter for LLM Store embedding routes

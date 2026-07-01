@@ -60,7 +60,7 @@ The bridge does not generate migration plans, apply patches, move assets, copy f
 
 ## Status
 
-- Category: Freebie Bridge Plugins
+- Category: Example Projects
 - Status: In preparation
 - Fab: Not listed separately
 
