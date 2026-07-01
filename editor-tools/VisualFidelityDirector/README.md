@@ -6,11 +6,14 @@
 
 Visual Fidelity Director is an Unreal Editor tool for visual-quality snapshots, recipe dry-runs, scanner reports, before/after comparison metadata, and cinematic recommendation exports. It helps teams reason about rendering intent without claiming to replace Unreal rendering systems or guarantee universal best settings.
 
+Version 1.0.0 is in publishment.
+
 The current product boundary is dry-run-first. Snapshot, recipe evaluation, scanner, comparison, cinematic, schema, diagnostics, and productization workflows write local reports. The preview apply path is limited to supported editor-session console variables and rolls them back after the report.
 
 ## Get It / Routing
 
-- Fab: Not listed yet
+- Status: In Publishment
+- Fab: In publishment; not live until Fab shows the listing as Live
 - Category: Editor Tools
 - Start here: shipped `Documentation/QUICKSTART.md` for control panel, first snapshot, and recipe dry-run
 - Buyer docs in package: quick start, user manual, settings reference, troubleshooting, FAQ, and third-party declaration
@@ -23,4 +26,4 @@ The current product boundary is dry-run-first. Snapshot, recipe evaluation, scan
 
 ## Media
 
-Product media is pending. Use the shipped buyer documentation for current workflow screenshots, expected report names, and safety boundaries.
+Product media now derives from the ProductImages slide set and local VFD report artifacts. The shipped buyer documentation remains the source for expected report names and safety boundaries.

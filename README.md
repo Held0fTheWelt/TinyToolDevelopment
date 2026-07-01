@@ -45,6 +45,7 @@ This repository should not contain private credentials, local machine state, gen
 | Naming Convention Utility | Editor Tools | Applies consistent asset prefixes and suffixes through validated Unreal asset rename workflows. | [Overview](editor-tools/NamingConventionUtility/README.md) | [Fab product](https://www.fab.com/listings/60aefcc0-6464-4a69-98d1-7ba02c6e06f2) |
 | Performance Preset Wizard | Editor Tools | Creates, reviews, applies, and restores reusable performance presets with scalability values and CVar overrides. | [Overview](editor-tools/PerformancePresetWizard/README.md) | [Fab product](https://www.fab.com/listings/39d1e5ea-4135-4197-91de-4c2193eb0d9c) |
 | Smart Content Diet | Editor Tools | Scans Unreal assets for optimization candidates, explains findings, and supports reviewed QuickFix/reduction workflows with explicit safety boundaries. | [Overview](editor-tools/SmartContentDiet/README.md) | Not listed yet |
+| Visual Fidelity Director | Editor Tools | Captures visual-quality snapshots, evaluates recipes, writes settings diffs, and keeps rendering-review reports local. | [Overview](editor-tools/VisualFidelityDirector/README.md) | In publishment |
 
 ## UCM-First Integration Model
 
@@ -145,6 +146,7 @@ editor-tools/
   NamingConventionUtility/
   PerformancePresetWizard/
   SmartContentDiet/
+  VisualFidelityDirector/
 
 scene-tools/
   AsyncSplineBuilder/
