@@ -8,6 +8,44 @@ and this plugin adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 ### Added
+- Documented the TTER route-projection boundary: UCM routes are discoverable as projected TTER tools without product changes.
+
+### Changed
+- Kept UCM as the sole route-planning, rules, approval, dry-run, transform, and execution authority. TTER projected-route invocation delegates to `FCapabilityMeshService::ExecuteRoute` rather than invoking endpoints or products directly.
+- Defined the lifecycle split for later slices: TTER owns invocation records, progress, cancellation, and rich results while UCM continues to own route governance and execution reports.
+- Documented the effective setup-root model: UCM merges its bundled profile, plugin-local profiles from enabled provider plugins, and an optional project override.
+- Clarified that a project-local setup copy is only required when the project intentionally overrides or composes provider-owned manifests.
+- The optional Tiny Tool Execution Integration Bridge reloads UCM setup before TTER discovery so plugin-local routes are projected at editor startup.
+- UCM functionality targets Unreal Engine 5.4 and later.
+
+### Fixed
+- Kept runtime and game targets free of editor-only DataTable serialization APIs while preserving the editor administration path behind compile-time guards.
+- Preserved `CanContainContent: true` on later engine branches so packaged editor content and administration assets remain supported.
+
+## [1.0.6] - 2026-07-12
+
+### Added
+- Added the Capability Mesh Agent Orientation surface with read-only routes for `capability_mesh.orientation.welcome.v1`, `capability_mesh.plugin_guides.list.v1`, `capability_mesh.plugin_guide.read.v1`, and `capability_mesh.route_warnings.analyze.v1`.
+- Added plugin-guide discovery for `capability_mesh.plugin_guide.v1` manifests, including buyer docs, agent docs, workflow route references, route-rule references, and guide/document drift warnings.
+- Added a Route Health overview in the UCM control panel showing `Group / Enabled / Loadable / Missing / Warnings / Guide` for enabled route manifests.
+- Added the `UCMRoute` commandlet for headless setup reload, route listing, dry-run, execution, endpoint invocation, and experimental self-approval configuration, with JSON file/stdout responses and explicit provider-module loading.
+
+### Changed
+- Missing enabled route manifests now produce `enabled_route_manifest_missing` warnings instead of generic route-load errors.
+- Updated bundled/project UCM profiles with the orientation manifests and current APM route names.
+- Reduced the project override profile to root-owned APM and cross-plugin composite routes, leaving plugin-local profiles as the source of truth for plugin-owned routes.
+- Disabled the project-level experimental all-route self-approval override in the default profile so route health reports no longer carry the self-approval warning by default.
+- Allowed the approval-gated `apm.content_packaging.execute_plan.v1` route through the default project-mutation deny rule's explicit exception list.
+
+### Fixed
+- Synchronized the central Best Practices Journal UCM manifests with the plugin-local BPJ setup so guide-referenced BPJ routes can be loaded and cataloged.
+- Removed obsolete active sample route/provider registration from the bundled default profile.
+- Repaired unloadable-route warnings caused by duplicate project-level copies of plugin-owned manifests overriding plugin-local route definitions.
+- Added live setup coverage for Asset Loader Studio and Geo Provider Store plugin profiles so their guide workflow dependencies resolve during MCP route warning analysis.
+
+## [1.0.5] - 2026-06-17
+
+### Added
 - Added plugin-local `Config/UnrealCapabilityMesh` manifests for Best Practices Journal, Procedural Generated Structures, Smart Content Diet, Internal Index Service, LLM Store, Project Restructure Service, Unified MCP Server, and Unreal Integration Intelligence, including expanded project and bundled capability/endpoint/route/schema profiles.
 - Added `ProceduralGeneratedStructuresCapabilityMeshEndpoints` and PGS actor/data-asset read, rebuild preview/apply, validate, and async-status routes.
 
@@ -58,7 +96,7 @@ and this plugin adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.
 
 ### Changed
 - Updated `Config/FilterPlugin.ini` to list all extra packaged files and folders outside the default BuildPlugin structure: `Config`, `Documentation`, `README.md`, `CHANGELOG.md`, and `TestFixtures`.
-- Confirmed all UCM modules use C++20 build settings for UE 5.6 compatibility.
+- Confirmed all UCM modules use C++20 build settings for UE 5.6 compatibility while retaining UE 5.4 as the minimum supported engine version.
 
 ## [1.0.0] - 2026-06-08
 

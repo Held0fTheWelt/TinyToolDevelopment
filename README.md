@@ -33,9 +33,12 @@ This repository should not contain private credentials, local machine state, gen
 | --- | --- | --- | --- | --- |
 | Internal Index Service | AI Plugins | Local indexing, retrieval, context packs, embedding jobs, and agent-facing search for Unreal Engine projects. | [Overview](ai-plugins/InternalIndexService/README.md) | [Fab product](https://www.fab.com/listings/9dfa7b61-cf4e-476b-8edc-253c7c5585e9) |
 | LLM Store | AI Plugins | Central management for AI providers, models, routes, policies, costs, secrets, and optional agents inside Unreal Engine. | [Overview](ai-plugins/LLMStore/README.md) | [Fab product](https://www.fab.com/listings/4e9c6062-e3e7-4113-93d1-f08d6e276020) |
-| Asset Plugin Maker | AI Plugins | In-publishment asset distillation, target-plugin builds, provenance, BOMs, validation reports, and release candidate evidence for Unreal Engine content plugins. | [Overview](ai-plugins/AssetPluginMaker/README.md) | Not listed yet |
+| Asset Plugin Maker | AI Plugins | Content Browser asset-to-plugin creation, multi-pack planning, cross-project inventory/transfer, provenance, validation, and update evidence. | [Overview](ai-plugins/AssetPluginMaker/README.md) | Not listed yet |
 | Project Restructure Service | AI Plugins | Safe, gated project restructuring and placement executor that can consume IIS evidence while keeping IIS itself read-only. | [Overview](ai-plugins/ProjectRestructureService/README.md) | Not listed yet |
+| Project Intelligence Orchestrator | AI Plugins | Internal/preview UCM-first workflow runner for deterministic manifests, approval-gated composition, verification reports, and reconstructable journals. | [Overview](ai-plugins/ProjectIntelligenceOrchestrator/README.md) | Internal preview |
+| Tiny Tool Execution | AI Plugins | Internal transport-neutral discovery and invocation runtime with progress, cancellation, rich results, resources, and governed route projection. | [Overview](ai-plugins/TinyToolExecution/README.md) | Internal |
 | Unified MCP Server | AI Plugins | Marketplace-available editor-only loopback MCP host with provider registry, bearer-token handshake, UCM route exposure, and optional provider-tool aggregation. | [Overview](ai-plugins/UnifiedMcpServer/README.md) | [Fab product](https://www.fab.com/listings/f5ded18c-38b5-4e12-88cb-120f484e282f) |
+| Unreal Blueprint Integrator | AI Plugins | Deterministic Blueprint evidence export plus approval-gated Blueprint and DataAsset mutation with preview, backup, apply, and rollback. | [Overview](ai-plugins/UnrealBlueprintIntegrator/README.md) | Not listed yet |
 | Unreal Integration Intelligence | AI Plugins | In-publishment project evidence export, System Dossier, review pack, RAG chunk, and handoff tooling for Unreal Engine projects. | [Overview](ai-plugins/UnrealIntegrationIntelligence/README.md) | Not listed yet |
 | Unreal Capability Mesh | Foundation Plugins | Published setup-driven interoperability hub for Unreal Engine plugins, with capability manifests, route planning, policy checks, editor job routes, and optional MCP gateway support. | [Overview](foundation-plugins/UnrealCapabilityMesh/README.md) | [Fab product](https://www.fab.com/listings/fd186d26-cdcf-4c4f-93d4-50e437b7673e) |
 | Async Spline Builder | Scene Tools | Builds roads, tracks, pipes, rails, walls, and side objects along splines, including async builds, segment planning, and landscape support. | [Overview](scene-tools/AsyncSplineBuilder/README.md) | [Fab product](https://www.fab.com/listings/41f15640-e169-490c-9edf-bd3255699043) |
@@ -52,6 +55,17 @@ This repository should not contain private credentials, local machine state, gen
 Cross-product workflows in the current Tiny Tool Development stack are primarily connected through **Unreal Capability Mesh (UCM)**. UCM owns the setup-declared capability, endpoint, route, rule, transform, and adapter layer. Core products keep their own data, settings, governance, and runtime behavior; UCM describes how those products connect without adding product-specific integration code to the hub.
 
 Unified MCP Server exposes UCM routes as `mesh_*` and `mesh_route_*` tools for local agents. For normal multi-product setups, prefer UCM over direct provider bridges.
+
+Tiny Tool Execution adds a transport-neutral discovery and invocation lifecycle behind the same
+authority boundaries. Its optional editor bridge projects UCM routes only after UCM setup is loaded;
+UMCP still owns transport and access policy, and UCM still owns route planning, dry-run, approval,
+and execution governance.
+
+## Integration Workflows
+
+| Workflow | Current public proof boundary | Start Here |
+| --- | --- | --- |
+| Cross-project composition | Read-only evidence collection, recursive project inventory, and deterministic draft compilation are demonstrated. Human review, mutation, target materialization, and final runtime verification remain explicit pending gates. | [Workflow guide](workflows/cross-project-composition.md) |
 
 ## Freebie Bridge Plugins
 
@@ -123,8 +137,11 @@ ai-plugins/
   AssetPluginMaker/
   InternalIndexService/
   LLMStore/
+  ProjectIntelligenceOrchestrator/
   ProjectRestructureService/
+  TinyToolExecution/
   UnifiedMcpServer/
+  UnrealBlueprintIntegrator/
   UnrealIntegrationIntelligence/
 
 foundation-plugins/
@@ -133,6 +150,7 @@ foundation-plugins/
 engine-plugins/
 
 bridge-plugins/
+  TinyToolExecutionIntegrationBridge/
   InternalIndexServiceLLMStoreBridge/
   SmartContentDietIISSimilarityBridge/
   SmartContentDietPRSBridge/
@@ -150,6 +168,9 @@ editor-tools/
 
 scene-tools/
   AsyncSplineBuilder/
+
+workflows/
+  cross-project-composition.md
 ```
 
 ## Repository Hygiene

@@ -19,6 +19,10 @@ when you want vector search.
   `Documentation/THIRD_PARTY_SOFTWARE.md`.
 - Category: AI Plugins
 
+For an installed Unreal Engine, use a BuildPlugin package built for the matching engine version.
+Precompiled binaries and Unreal's generated precompile manifests are part of that package and should
+not be removed during installation.
+
 ## Synergies & Bridges
 
 - **LLM Store** can provide embedding route executors for vector and hybrid search.

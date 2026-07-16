@@ -7,7 +7,14 @@ and this plugin adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Kept BuildPlugin-generated precompile metadata in packaged output so an installed Unreal Engine can load the precompiled Smart Content Diet modules.
+- Clarified that Smart Content Diet functionality targets Unreal Engine 5.4 and later; later engine branches contain compatibility adjustments rather than separate product behavior.
+
+## [1.0.5] - 2026-07-12
+
 ### Added
+- Added agent-orientation plugin guide (capability_mesh.plugin_guide.v1).
 - Added plugin-local `Config/UnrealCapabilityMesh` manifests for the full SCD capability surface: scan, findings, health, governance, similarity, optimization, migration-advice, and editor-job routes with matching schemas and project profile registration.
 
 ## [1.0.4] - 2026-06-16

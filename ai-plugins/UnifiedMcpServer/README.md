@@ -16,6 +16,7 @@ the actual product capabilities still belong to their provider plugins.
 
 - Fab: [Unified MCP Server](https://www.fab.com/listings/f5ded18c-38b5-4e12-88cb-120f484e282f)
 - Category: AI Plugins
+- Engine baseline: Unreal Engine 5.4+
 - Editor menu: `Tools -> AI -> Universal MCP`
 - Default local endpoint: `http://127.0.0.1:8732/mcp`
 - Package docs: included with the Fab/plugin package for installation, settings, troubleshooting,
@@ -31,6 +32,11 @@ Provider plugins can also register direct tools through the UMCP provider interf
 is useful for independent providers, reference adapters, and no-UCM projects. Optional bridge plugins
 may publish product-specific tool names for compatibility, but UCM routes remain the preferred setup
 for cross-product workflows.
+
+Tiny Tool Execution can sit behind UMCP as the shared discovery and invocation lifecycle. Its
+optional editor integration bridge publishes the TTER meta-tools, resources, and cancellation
+surface, then projects already-governed UCM routes without moving token policy, access checks, or
+audit out of UMCP.
 
 Useful pairings:
 

@@ -45,6 +45,10 @@ The Freebie Bridges below are not the default integration path. They remain avai
 - Fab: Not listed yet
 - Documentation: Online overview and routing page available; package buyer docs ship with the plugin
 
+For an installed Unreal Engine, install a BuildPlugin package built for that engine version.
+Precompiled binaries and generated precompile manifests belong to the installed package; a
+source-only folder is not an equivalent installed-engine deployment.
+
 ## Support
 
 For questions, setup help, and product support:

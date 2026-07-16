@@ -1,8 +1,14 @@
-# Example Projects
+# Bridge Plugins and Example Projects
 
-This category contains optional free companion example projects for teams that do not own or do not enable **Unreal Capability Mesh (UCM)**, plus reference implementations that show how direct adapters should be shaped.
+This category contains two kinds of optional companions:
 
-UCM is the primary integration layer for the current Tiny Tool Development stack. Normal cross-product workflows should be declared as UCM capabilities, endpoints, routes, rules, transforms, and adapters, then exposed through Unified MCP Server when agent access is needed.
+- narrow no-UCM example bridges that demonstrate responsible direct adapters;
+- integration bridges that connect otherwise independent infrastructure layers without moving
+  policy or domain ownership into either core product.
+
+UCM is the primary route layer for the current Tiny Tool Development stack. Normal cross-product
+workflows should be declared as UCM capabilities, endpoints, routes, rules, transforms, and adapters,
+then exposed through Unified MCP Server or Tiny Tool Execution when agent access is needed.
 
 Example Projects do not replace UCM and do not replace the products they connect. They keep responsibilities clear: each core plugin continues to own its own data, settings, governance, and runtime behavior.
 
@@ -12,6 +18,7 @@ These entries are listed here even when their full buyer-facing documentation is
 
 | Bridge Plugin | Connects | Description | Start Here |
 | --- | --- | --- | --- |
+| Tiny Tool Execution Integration Bridge | Tiny Tool Execution + Unified MCP Server + Unreal Capability Mesh | Editor-only adapter that publishes TTER meta-tools and projects UCM routes while preserving UMCP access policy and UCM route governance. | [Overview](TinyToolExecutionIntegrationBridge/README.md) |
 | IIS LLM Store Bridge | Internal Index Service + LLM Store | No-UCM/reference adapter for IIS embedding jobs through LLM Store embedding routes. | [Overview](InternalIndexServiceLLMStoreBridge/README.md) |
 | SmartContentDiet IIS Similarity Bridge | Smart Content Diet + Internal Index Service | No-UCM/reference adapter for SCD semantic similarity backed by IIS and SCD health-evidence JSONL import. | [Overview](SmartContentDietIISSimilarityBridge/README.md) |
 | SmartContentDiet PRS Bridge | Smart Content Diet + Project Restructure Service | No-UCM/reference adapter for reviewed SCD placement moves into PRS validation, dry-run, apply, and rollback APIs. | [Overview](SmartContentDietPRSBridge/README.md) |

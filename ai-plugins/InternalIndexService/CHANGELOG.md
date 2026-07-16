@@ -7,12 +7,28 @@ and this plugin adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Kept BuildPlugin-generated precompile metadata in packaged output so an installed Unreal Engine can load the precompiled IIS modules.
+- Clarified that IIS functionality targets Unreal Engine 5.4 and later; later engine branches contain compatibility adjustments rather than separate product behavior.
+
+## [1.0.7] - 2026-07-12
+
 ### Added
-- Added plugin-local `Config/UnrealCapabilityMesh` manifests for agent search/context routes, diagnostics, index control, performance benchmark, import/rebuild/status routes, and editor-job listing with shared schemas and project-profile registration.
+- Added agent-orientation plugin guide (capability_mesh.plugin_guide.v1).
+
+## [1.0.6] - 2026-07-02
+
+### Added
+- Inline canonical agent responses on `iis.agent.search.v1`, `iis.agent.get_context_pack.v1`, and `iis.agent.explain_blueprint.v1` (payload plus `response_path`).
+- Index status truth fields: `catalog_exists`, `chunk_store_records`, and `vector_records` on `iis.index.status.v1`.
+
+### Changed
+- `iis.import.prepared_chunks.v1` now surfaces `import_report_path` on the route output.
 
 ## [1.0.5] - 2026-06-16
 
 ### Added
+- Added plugin-local `Config/UnrealCapabilityMesh` manifests for agent search/context routes, diagnostics, index control, performance benchmark, import/rebuild/status routes, and editor-job listing with shared schemas and project-profile registration.
 - Added runtime control surface: live observe, tune, and act over `FIISControlSurface` with transient-by-default tuning, master mutation gate (`bEnableRuntimeControlMutations`), `persist`/`reset`, live `efSearch`/int8-kernel re-apply hooks, opt-in recent-diagnostics ring buffer, index act-verbs, `UIISControlEndpoints` reflected JSON facade (one UFUNCTION per verb), typed `UIISSubsystem` control methods, and `iis.control.*` / `iis.perf.*` / `iis.index.*` console commands.
 - Added performance self-check and benchmark budgets: shared `FIISPerfBench` core over a seeded synthetic HNSW corpus (warmup + median/p95) with workloads `WL_VectorSearch`, `WL_KernelRatio` (AVX2 absent reports n/a, not a failure), and `WL_IncrementalRatio`. Shipped `UIISSubsystem::RunPerfSelfCheck()` judges against steerable `Vector Index|Performance` settings and broadcasts `OnPerfSelfCheckDeviation` per breach. Automation can emit perf JSON with ratios and optional rolling baselines.
 - Integrated a persistent vector index service with an incremental HNSW backend into the indexing pipeline, including module wiring and lifecycle management.
@@ -77,7 +93,7 @@ and this plugin adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.
 - Added explicit publisher and intended publication year headers to IIS source files, build scripts, validation tooling, and bundled third-party headers.
 
 ### Changed
-- Updated IIS modules to C++20 for UE 5.6 engine-header compatibility.
+- Updated IIS modules to C++20 for UE 5.6 engine-header compatibility while retaining UE 5.4 as the minimum supported engine version.
 
 ## [1.0.2] - 2026-06-08
 
