@@ -4,7 +4,8 @@ This category contains Unreal Engine infrastructure plugins that provide shared 
 
 ## Products
 
-No current public product docs are listed in this category.
+- [Lightning](Lightning/README.md) - advanced-preview data-oriented runtime core plus a separately
+  bounded Unreal owner and Actor bridge.
 
 ## Notes
 
