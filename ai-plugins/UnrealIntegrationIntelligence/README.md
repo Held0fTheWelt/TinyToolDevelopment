@@ -2,7 +2,7 @@
 
 > Not a verbatim copy of shipped docs. This online page is an overview and routing surface; shipped buyer docs stay in the plugin package.
 
-Unreal Integration Intelligence (UII) is in publishment for version 1.0.0. It prepares Unreal project evidence, System Dossiers, review packs, RAG-ready chunks, and bridge-ready handoff contracts for migration, integration review, project understanding, and downstream tooling.
+Unreal Integration Intelligence (UII) is in publishment for version 1.1.3. It prepares Unreal project evidence, System Dossiers, review packs, RAG-ready chunks, and bridge-ready handoff contracts for migration, integration review, project understanding, and downstream tooling.
 
 UII is evidence infrastructure. It validates project profiles, exports structured project evidence, and helps other tools consume reviewed handoff artifacts. In the current stack, UCM is the preferred way to route UII evidence into IIS, PRS, Smart Content Diet, UCI, BPJ, PIO, or agent-facing workflows. Freebie Bridges remain available only for no-UCM projects and as direct-adapter examples.
 
@@ -11,12 +11,13 @@ UII is evidence infrastructure. It validates project profiles, exports structure
 - Exports project evidence for review and downstream tooling.
 - Builds asset, module, C++ symbol, reflection, network, source, and Blueprint-oriented analysis artifacts.
 - Builds System Dossiers with subsystem clustering, C++ context, data/animation evidence, port-readiness bands, and confidence factors.
+- Offers an optional Translation Evidence route that combines compatible UBI Blueprint/compiler artifacts with source/target C++ and Reflection Surface indexes; relative upstream paths are stored as canonical absolute paths for reproducible later review.
 - Produces review packs, RAG-oriented packages, and handoff contracts for retrieval, planning, reporting, and bridge workflows.
 - Keeps retrieval, embeddings, model routes, provider secrets, planning authority, and project mutation outside UII.
 
 ## Product Boundary
 
-UII does not replace IIS as the local retrieval/index layer, PRS as the gated restructure executor, LLM Store as the provider-policy owner, or UCI/PIO as reviewed planning/orchestration owners. UII describes and prepares the project; downstream tools decide how to index, plan, report, or execute.
+UII does not replace IIS as the local retrieval/index layer, PRS as the gated restructure executor, LLM Store as the provider-policy owner, or UCI/PIO as reviewed planning/orchestration owners. UII describes and prepares the project; downstream tools decide how to index, plan, report, or execute. The standalone System Dossier remains useful without UBI or another Tiny Tool plugin; Translation Evidence is an optional integration lane.
 
 ## UCM Integration And Optional No-UCM Bridges
 
@@ -36,10 +37,12 @@ Product images are available under [Media](Media/). The current generated set is
 ## Status
 
 - Category: AI Plugins
-- Version: 1.0.0
+- Version: 1.1.3
+- Engine baseline: Unreal Engine 5.4+
+- Current descriptor/build target: Unreal Engine 5.8
 - Status: In Publishment
 - Fab: In publishment; not live until Fab shows the listing as Live
-- Current focus: package-real evidence export, System Dossier review packs, RAG packages, and bridge-ready handoff contracts
+- Current focus: package-real evidence export, System Dossier review packs, reproducible optional Translation Evidence, RAG packages, and bridge-ready handoff contracts
 
 ## Support
 

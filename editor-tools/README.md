@@ -6,6 +6,7 @@ This category contains Unreal Editor productivity tools for governance, code hyg
 
 | Product | Description | Start Here | Fab |
 | --- | --- | --- | --- |
+| Best Practices Journal | Collects evidence-backed practices, keeps promotion human-controlled, and exports explicit application briefs and outcomes. | [Overview](BestPracticesJournal/README.md) | Not listed yet |
 | Code Copyright Editor | Keeps source headers, project notices, metadata, and CI checks consistent. | [Overview](CodeCopyrightEditor/README.md) | [Fab product](https://www.fab.com/listings/e30d9b22-9c8b-41ff-8887-d2cce63a119f) |
 | Lightweight Editor Mode | Temporarily reduces editor rendering cost through reversible performance profiles. | [Overview](LightweightEditorMode/README.md) | [Fab product](https://www.fab.com/listings/94911975-ec7d-4d7c-8408-04bc647eb373) |
 | LogLevelEditor | Finds Unreal log categories and changes verbosity from an editor dashboard. | [Overview](LogLevelEditor/README.md) | [Fab product](https://www.fab.com/listings/e9d934de-0432-452d-b899-be2461859f76) |

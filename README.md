@@ -35,13 +35,14 @@ This repository should not contain private credentials, local machine state, gen
 | LLM Store | AI Plugins | Central management for AI providers, models, routes, policies, costs, secrets, and optional agents inside Unreal Engine. | [Overview](ai-plugins/LLMStore/README.md) | [Fab product](https://www.fab.com/listings/4e9c6062-e3e7-4113-93d1-f08d6e276020) |
 | Asset Plugin Maker | AI Plugins | Content Browser asset-to-plugin creation, multi-pack planning, cross-project inventory/transfer, provenance, validation, and update evidence. | [Overview](ai-plugins/AssetPluginMaker/README.md) | Not listed yet |
 | Project Restructure Service | AI Plugins | Safe, gated project restructuring and placement executor that can consume IIS evidence while keeping IIS itself read-only. | [Overview](ai-plugins/ProjectRestructureService/README.md) | Not listed yet |
-| Project Intelligence Orchestrator | AI Plugins | Internal/preview UCM-first workflow runner for deterministic manifests, approval-gated composition, verification reports, and reconstructable journals. | [Overview](ai-plugins/ProjectIntelligenceOrchestrator/README.md) | Internal preview |
+| Project Intelligence Orchestrator | AI Plugins | Internal UCM-first workflow runner for review-only Translation Evidence, deterministic manifests, approval-gated composition, findings-bearing verification, and reconstructable journals. | [Overview](ai-plugins/ProjectIntelligenceOrchestrator/README.md) | Internal preview |
 | Tiny Tool Execution | AI Plugins | Internal transport-neutral discovery and invocation runtime with progress, cancellation, rich results, resources, and governed route projection. | [Overview](ai-plugins/TinyToolExecution/README.md) | Internal |
 | Unified MCP Server | AI Plugins | Marketplace-available editor-only loopback MCP host with provider registry, bearer-token handshake, UCM route exposure, and optional provider-tool aggregation. | [Overview](ai-plugins/UnifiedMcpServer/README.md) | [Fab product](https://www.fab.com/listings/f5ded18c-38b5-4e12-88cb-120f484e282f) |
-| Unreal Blueprint Integrator | AI Plugins | Deterministic Blueprint evidence export plus approval-gated Blueprint and DataAsset mutation with preview, backup, apply, and rollback. | [Overview](ai-plugins/UnrealBlueprintIntegrator/README.md) | Not listed yet |
-| Unreal Integration Intelligence | AI Plugins | In-publishment project evidence export, System Dossier, review pack, RAG chunk, and handoff tooling for Unreal Engine projects. | [Overview](ai-plugins/UnrealIntegrationIntelligence/README.md) | Not listed yet |
+| Unreal Blueprint Integrator | AI Plugins | Deterministic Blueprint evidence and compiler diagnostics plus approval-gated Blueprint and DataAsset mutation with preview, backup, apply, and rollback. | [Overview](ai-plugins/UnrealBlueprintIntegrator/README.md) | In publishment |
+| Unreal Integration Intelligence | AI Plugins | In-publishment project evidence export, System Dossier, reproducible optional Translation Evidence, review packs, RAG chunks, and handoff tooling for Unreal Engine projects. | [Overview](ai-plugins/UnrealIntegrationIntelligence/README.md) | In publishment |
 | Unreal Capability Mesh | Foundation Plugins | Published setup-driven interoperability hub for Unreal Engine plugins, with capability manifests, route planning, policy checks, editor job routes, and optional MCP gateway support. | [Overview](foundation-plugins/UnrealCapabilityMesh/README.md) | [Fab product](https://www.fab.com/listings/fd186d26-cdcf-4c4f-93d4-50e437b7673e) |
 | Async Spline Builder | Scene Tools | Builds roads, tracks, pipes, rails, walls, and side objects along splines, including async builds, segment planning, and landscape support. | [Overview](scene-tools/AsyncSplineBuilder/README.md) | [Fab product](https://www.fab.com/listings/41f15640-e169-490c-9edf-bd3255699043) |
+| Best Practices Journal | Editor Tools | In-publishment practice governance for evidence-backed candidates, explicit human promotion, intent-only briefs, and outcome history. | [Overview](editor-tools/BestPracticesJournal/README.md) | In publishment |
 | Code Copyright Editor | Editor Tools | Keeps Unreal Engine source copyright headers, project notices, metadata, and CI checks consistent. | [Overview](editor-tools/CodeCopyrightEditor/README.md) | [Fab product](https://www.fab.com/listings/e30d9b22-9c8b-41ff-8887-d2cce63a119f) |
 | Lightweight Editor Mode | Editor Tools | Temporarily reduces Unreal Editor viewport and rendering cost through reversible performance profiles. | [Overview](editor-tools/LightweightEditorMode/README.md) | [Fab product](https://www.fab.com/listings/94911975-ec7d-4d7c-8408-04bc647eb373) |
 | LogLevelEditor | Editor Tools | Discovers Unreal log categories and changes verbosity levels from a focused editor dashboard. | [Overview](editor-tools/LogLevelEditor/README.md) | [Fab product](https://www.fab.com/listings/e9d934de-0432-452d-b899-be2461859f76) |
@@ -158,6 +159,7 @@ bridge-plugins/
   UIIInternalIndexServiceBridge/
 
 editor-tools/
+  BestPracticesJournal/
   CodeCopyrightEditor/
   LightweightEditorMode/
   LogLevelEditor/

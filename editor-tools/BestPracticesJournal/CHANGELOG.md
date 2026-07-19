@@ -5,7 +5,27 @@ All notable changes to this plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this plugin adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.1.2] - 2026-07-19
+
+### Changed
+- Reconciled the public documentation with the current standalone journal lifecycle and Unreal Engine 5.4-and-later compatibility floor.
+- Clarified that imported evidence and provider output remain reviewable candidates until an explicit human promotion; external producers never gain journal-governance authority.
+
+## [1.1.1] - 2026-07-12
+
+### Added
+- Imported rich APM/PIO envelope fields into practice candidates while preserving compact input, outcome, and content-packaging provenance.
+
+### Changed
+- Envelope imports prefer authored practice text and use deterministic generic text only when an optional field is absent.
+
+### Fixed
+- Enabled the guide-referenced promotion, repository-list, and practice-read routes and synchronized the BPJ Capability Mesh manifests.
+
+## [1.1.0] - 2026-07-02
+
+### Added
+- Added the MCP-closable journal lifecycle with candidate import, approval-gated promotion, repository reads, honest evolution counts, and UBI/PIO provider inboxes.
 
 ## [1.0.0] - 2026-06-30
 
@@ -15,7 +35,7 @@ and this plugin adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.
 
 ### Changed
 - Promoted descriptor `VersionName` from `0.1.0` to `1.0.0` and `Version` from `1` to `2` to mark the first stable release of the Current Implementation surface.
-- Updated the SAD version reference and the internal Fab listing review file to the `1.0.0` descriptor state.
+- Reconciled the product documentation and release metadata with the `1.0.0` descriptor state.
 
 ## [0.1.0] - 2026-06-16
 
