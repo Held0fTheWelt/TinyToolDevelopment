@@ -12,6 +12,12 @@ cross-project plugin operations. APM can inventory another Unreal project withou
 discover plugins in nested category folders, rank dependencies, identify mirrored code plugins,
 and prepare approval-gated export or adoption work for a reviewed composition manifest.
 
+For content-pack descriptors, project-owned `/Game` content remains an execution dependency only:
+APM retains its graph edge and build order but never writes a `ProjectContent` pack name into a
+plugin's `.uplugin` dependencies, including names supplied through explicit `plugin_dependencies`.
+Class compatibility likewise accepts only type-matched `Class` redirects; Struct or Enum redirects
+cannot satisfy a class import.
+
 ## Get It / Routing
 
 - Fab: not listed yet
