@@ -13,7 +13,11 @@
 *.local
 *.secret
 secrets/
-private/
+# Anchored to the repo root: unanchored "private/" also matched (case-insensitively on
+# Windows) every plugin's Source/**/Private/ folder, silently hiding real, tracked-looking
+# module source (.cpp/.h) from git ls-files -- found via the TTD canon migration's
+# manifest-based cross-repo link check (2026-07-23).
+/private/
 
 # Python/cache output
 __pycache__/
