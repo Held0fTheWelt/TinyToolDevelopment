@@ -2,9 +2,7 @@
 
 > Not a verbatim copy of shipped docs. This online page is an overview and routing surface; shipped buyer docs stay in the plugin package.
 
-Smart Documentation Assistant audits Unreal C++ source documentation, drafts review-gated documentation patches, and writes local reports. It is standalone-first: deterministic analysis runs without external AI, while optional capability providers can enrich source context, evidence, and patch drafting.
-
-Primary public category: [Editor Tools](../../editor-tools/SmartDocumentationAssistant/README.md).
+Smart Documentation Assistant is in publishment as a standalone-first Unreal C++ source documentation assistant. It audits source documentation, writes local reports, exports prompt and patch-plan evidence, and applies only reviewed documentation-only proposals.
 
 ## What It Does
 

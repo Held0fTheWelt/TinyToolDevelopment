@@ -6,7 +6,7 @@ This category contains scene, world, spline, and environment-authoring tools for
 
 | Product | Description | Start Here | Fab |
 | --- | --- | --- | --- |
-| Async Spline Builder | Builds roads, tracks, pipes, rails, walls, and side objects along splines with async rebuild support and landscape tooling. | [Overview](AsyncSplineBuilder/README.md) | [Fab product](https://www.fab.com/listings/41f15640-e169-490c-9edf-bd3255699043) |
+| Async Spline Builder | Builds multi-layout roads, tracks, pipes, rails, walls, and side objects with async rebuilds, landscape tools, passive layout connectors, and optional visual-only endpoint labels. | [Overview](AsyncSplineBuilder/README.md) | [Fab product](https://www.fab.com/listings/41f15640-e169-490c-9edf-bd3255699043) |
 
 ## Notes
 

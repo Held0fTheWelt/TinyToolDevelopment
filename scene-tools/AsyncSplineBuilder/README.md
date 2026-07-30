@@ -1,6 +1,6 @@
 # Async Spline Builder
 
-Async Spline Builder is a scene-authoring plugin for roads, tracks, pipes, rails, walls, and side objects generated along Unreal splines. It focuses on repeatable segment workflows, async rebuilds, tagged generated components, optional landscape operations, and native editor track-shape authoring.
+Async Spline Builder is a scene-authoring plugin for roads, tracks, pipes, rails, walls, and side objects generated along Unreal splines. It focuses on repeatable segment workflows, async rebuilds, tagged generated components, optional landscape operations, native editor track-shape authoring, and passive relationships between layouts.
 
 Not a verbatim copy of shipped docs.
 
@@ -9,6 +9,7 @@ Not a verbatim copy of shipped docs.
 - Builds road, race-track, pipe, rail, wall, and side-object geometry from spline actors.
 - Supports immediate rebuilds and async rebuilds with visible editor feedback.
 - Keeps generated components tagged so cleanup and targeted rebuilds stay predictable.
+- Records passive pit-entry, pit-exit, link, and service-access connectors and can show optional endpoint labels for valid connector positions. These diagnostics are visual-only and do not generate transition roads or change terrain behavior.
 - Includes optional landscape snapping, deformation, paint, ground-wall, and drop-wall workflows.
 - Exposes optional UCM/UMCP routes without making automation plugins required.
 
