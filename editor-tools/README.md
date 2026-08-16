@@ -2,6 +2,8 @@
 
 This category contains Unreal Editor productivity tools for governance, code hygiene, documentation health, naming, logging, performance, validation, asset quality, and project workflow improvements.
 
+Editor Extension Base also has a dedicated online landing page at [docs.tiny-tool-development.com/editor-extension-base/](https://docs.tiny-tool-development.com/editor-extension-base/) so consumers can jump from the category overview to the public overview surface before they open the plugin folder docs.
+
 ## Products
 
 | Product | Description | Start Here | Fab |
@@ -22,3 +24,15 @@ This category contains Unreal Editor productivity tools for governance, code hyg
 Editor productivity plugins in this category open from the **Tools** menu. Section names include **Code Tools**, **Performance**, **Log Tools**, and **Content Tools**. See [Editor menu layout](../EDITOR_MENUS.md).
 
 Most products include a complete `Documentation/` folder with buyer-facing, user-facing, and technical references.
+
+## Public Landing Routes
+
+- [Editor Extension Base](../editor-extension-base/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [Best Practices Journal](../best-practices-journal/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [Code Copyright Editor](../code-copyright-editor/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [Lightweight Editor Mode](../lightweight-editor-mode/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [LogLevelEditor](../log-level-editor/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [Naming Convention Utility](../naming-convention-utility/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [Performance Preset Wizard](../performance-preset-wizard/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [Smart Content Diet](../smart-content-diet/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [Visual Fidelity Director](../visual-fidelity-director/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.

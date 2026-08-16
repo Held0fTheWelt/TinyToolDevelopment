@@ -12,3 +12,7 @@ Provider plugins can ship their own mesh manifests for installed-project portabi
 profiles then select or override those provider routes for a particular composition. See the
 [cross-project composition workflow](../workflows/cross-project-composition.md) for a concrete
 multi-owner example.
+
+## Public Landing Routes
+
+- [Unreal Capability Mesh](../unreal-capability-mesh/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.

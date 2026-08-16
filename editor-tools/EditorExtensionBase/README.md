@@ -2,6 +2,8 @@
 
 > Not a verbatim copy of shipped docs. This online page is an overview and routing surface; shipped buyer docs stay in the plugin package.
 
+This folder is the GitHub docs landing page for Editor Extension Base. The public overview lives at [docs.tiny-tool-development.com/editor-extension-base/](https://docs.tiny-tool-development.com/editor-extension-base/), while the shipped buyer docs stay in the plugin package.
+
 Editor Extension Base is a shared Unreal Editor foundation for Tiny Tool Development UI plugins. It ships reusable Editor Utility widgets, Content Browser selection / checkout / save helpers, undo preparation utilities, and a lightweight runtime macros module.
 
 It is a support layer — it does not register its own Tiny Tools product menu. Feature plugins consume it for consistent editor UX.

@@ -28,3 +28,9 @@ AI infrastructure plugins share the **Tools -> AI** section in the editor where 
 
 The product folders in this category are online overview and routing entries. Package-specific buyer
 docs stay with the shipped plugins unless a product page links to a curated public copy.
+
+## Public Landing Routes
+
+- [Internal Index Service](../internal-index-service/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [LLM Store](../llm-store/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
+- [Unified MCP Server](../unified-mcp-server/README.md) mirrors the shipped multilingual buyer docs under `/en/`, `/de/`, `/fr/`, `/it/`, `/es/`, `/ja/`, and `/zh/`.
